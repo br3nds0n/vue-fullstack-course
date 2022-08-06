@@ -2,13 +2,23 @@
   <div class="principal">
     <div class="principal">
       <h1>Products</h1>
+      <div>
+        <ul>
+          <li>
+            <div class="dados" id="id"><strong>id</strong></div>
+            <div class="dados" id="descricao"><strong>Nome</strong></div>
+            <div class="dados" id="amount"><strong>Quantidade</strong></div>
+            <div class="dados" id="price"><strong>Preço</strong></div>
+          </li>
+        </ul>
+      </div>
       <div v-for="dado in dados" :key="dado.id">
         <ul>
           <li>
             <div class="dados" id="id">{{ dado.id }}</div>
-            <div class="dados" id="name">{{ dado.name }} </div>
+            <div class="dados" id="name">{{ dado.name }}</div>
             <div class="dados" id="amount">{{ dado.amount }}</div>
-            <div class="dados" id="price">{{ dado.price }}</div>
+            <div class="dados" id="price">{{ valor(dado.price) }}</div>
           </li>
         </ul>
       </div>
@@ -23,6 +33,11 @@ export default {
   data () {
     return {
       dados: dados
+    }
+  },
+  methods: {
+    valor (valor) {
+      return 'R$ ' + valor.toFixed(2)
     }
   }
 }
@@ -61,7 +76,6 @@ export default {
     #id {
       min-width: 10%;
     }
-
     #name {
       min-width: 35%;
       color: blue;
