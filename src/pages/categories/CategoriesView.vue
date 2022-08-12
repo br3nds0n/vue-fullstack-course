@@ -7,26 +7,37 @@
         <div class="dados">{{category.name}}</div>
       </div>
     </div>
+    <div class="produtos">
+      {{ products }}
+      <input v-model="produtos" type="text">
+      <button v-on:click="addProdutos(produtos)" class="btn btn-primary mt-4">+</button>
+    </div>
   </div>
 </template>
 
 <script>
 import axios from 'axios'
+import { mapState, mapActions } from 'vuex'
 export default {
   data () {
     return {
-      categories: {}
+      categories: {},
+      produtos: ''
     }
   },
   created () {
     this.getCategories()
+  },
+  computed: {
+    ...mapState(['categories', 'products'])
   },
   methods: {
     getCategories () {
       axios.get('http://localhost:5000/api/categories').then(response => {
         this.categories = response.data
       })
-    }
+    },
+    ...mapActions(['addProdutos'])
   }
 }
 </script>
