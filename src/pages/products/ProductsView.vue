@@ -14,19 +14,30 @@
             <div class="dados" id="descricao"><strong>Nome</strong></div>
             <div class="dados" id="amount"><strong>Quantidade</strong></div>
             <div class="dados" id="price"><strong>Preço</strong></div>
+            <div class="dados" id="action"><strong>Ação</strong></div>
           </li>
         </ul>
       </div>
-      <div v-for="dado in products.products" :key="dado.id">
+      <div v-if="products.products.length > 0">
+         <div v-for="dado in products.products" :key="dado.id">
         <ul>
           <li>
             <div class="dados" id="id">{{ dado.id }}</div>
             <div class="dados" id="name">{{ dado.name }}</div>
             <div class="dados" id="amount">{{ dado.amount }}</div>
             <div class="dados" id="price">{{ valor(dado.price) }}</div>
+            <div class="dados" id="action">
+              <router-link
+                v-bind:to="{ name: 'productsUpdate', params: { id: dado.id } }"
+              >
+              <button class="btn btn-primary">Atualizar</button>
+              </router-link>
+            </div>
           </li>
         </ul>
       </div>
+      </div>
+
       <hr />
     </div>
   </div>

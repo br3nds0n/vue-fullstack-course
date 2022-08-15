@@ -4,6 +4,7 @@ import HomeView from '../pages/HomeView.vue'
 import CategoriesView from '../pages/categories/CategoriesView.vue'
 import ProductsView from '../pages/products/ProductsView.vue'
 import ProductsRegister from '../pages/products/ProductsRegister.vue'
+import ProductsUpdate from '../pages/products/ProductsUpdate.vue'
 
 const routes = [
   {
@@ -25,6 +26,11 @@ const routes = [
     path: '/register',
     name: 'productsRegister',
     component: ProductsRegister
+  },
+  {
+    path: '/update',
+    name: 'productsUpdate',
+    component: ProductsUpdate
   }
 ]
 
