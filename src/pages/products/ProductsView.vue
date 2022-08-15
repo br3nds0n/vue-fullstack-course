@@ -35,7 +35,7 @@ export default {
     return {}
   },
   methods: {
-    ...mapActions(['getProducts']),
+    ...mapActions('products', ['getProducts']),
     valor (valor) {
       return 'R$ ' + valor.toFixed(2)
     }
