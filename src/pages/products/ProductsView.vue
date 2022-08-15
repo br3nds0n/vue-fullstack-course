@@ -1,7 +1,12 @@
 <template>
   <div class="principal">
     <div class="principal">
-      <h1>Products</h1>
+      <div class="topo">
+        <h1>Products</h1>
+        <button class="btn btn-success">
+          <router-link class="link" to="/register">Add Produto</router-link>
+        </button>
+      </div>
       <div>
         <ul>
           <li>
@@ -94,6 +99,9 @@ export default {
     }
     #price {
       min-width: 14%;
+    }
+    #category{
+       min-width: 35%;
     }
   }
 }
