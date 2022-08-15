@@ -7,13 +7,6 @@
         <div class="dados">{{ category.name }}</div>
       </div>
     </div>
-    <div class="produtos">
-      {{ products }}
-      <input v-model="produtos" type="text" />
-      <button v-on:click="addProdutos(produtos)" class="btn btn-primary mt-4">
-        +
-      </button>
-    </div>
   </div>
 </template>
 
