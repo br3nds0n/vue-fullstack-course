@@ -6,5 +6,11 @@ export default {
   },
   [types.ADD_PRODUCTS] (state, payload) {
     state.products = payload
+  },
+  [types.FIND_PRODUCTS] (state, payload) {
+    state.products = payload
+  },
+  [types.UPDATE_PRODUCTS] (state, payload) {
+    state.products = payload
   }
 }
