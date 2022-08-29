@@ -4,7 +4,7 @@
     <div class="alert alert-success" v-if="ok">
       <h4>Dados Atualizados com Sucesso!</h4>
     </div>
-    <div class="alert" v-else-if="error">
+    <div class="alert alert-danger" v-else-if="error">
       <h4>{{ message }}</h4>
     </div>
 
