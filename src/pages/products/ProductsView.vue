@@ -32,6 +32,7 @@
               >
               <button class="btn btn-primary">Atualizar</button>
               </router-link>
+              <button v-on:click="excluirProduto(dado.id)" class="btn btn-danger ml-2">Deletar</button>
             </div>
           </li>
         </ul>
@@ -51,10 +52,20 @@ export default {
     return {}
   },
   methods: {
-    ...mapActions('products', ['getProducts']),
+    ...mapActions('products', ['getProducts', 'deleteProducts']),
     valor (valor) {
       return 'R$ ' + valor.toFixed(2)
+    },
+
+    async excluirProduto (id) {
+      try {
+        await this.deleteProducts(id)
+        this.$router.go()
+      } catch (e) {
+        alert('Não foi possível excluir ' + e)
+      }
     }
+
   },
   computed: {
     ...mapState(['products'])
