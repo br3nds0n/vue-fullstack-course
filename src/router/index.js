@@ -5,6 +5,7 @@ import CategoriesView from '../pages/categories/CategoriesView.vue'
 import ProductsView from '../pages/products/ProductsView.vue'
 import ProductsRegister from '../pages/products/ProductsRegister.vue'
 import ProductsUpdate from '../pages/products/ProductsUpdate.vue'
+import Login from '../pages/login/LoginView.vue'
 
 const routes = [
   {
@@ -31,6 +32,11 @@ const routes = [
     path: '/update',
     name: 'productsUpdate',
     component: ProductsUpdate
+  },
+  {
+    path: '/login',
+    name: 'login',
+    component: Login
   }
 ]
 
