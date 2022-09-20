@@ -18,7 +18,7 @@
 
 > **Project Feature:** _API Rest_ 🌐
 
-Este projeto é o front-end do [front-end](https://github.com/br3nds0n/spring-fullstack-course), consiste em um estoque feito com `vue`, onde faço as seguintes implementações:
+Este projeto é o front-end do [back-end](https://github.com/br3nds0n/spring-fullstack-course), consiste em um estoque feito com `vue`, onde faço as seguintes implementações:
 
 -   Interação de métodos http. (POST, GET, PUT e DELETE);
 -   Autenticação JWT;
@@ -56,8 +56,8 @@ $ npm run serve
 $ ./run
 
 # aplicativo rodando em:
-  - Local:   http://localhost:3000/ 
-  - Network: http://192.168.1.14:3000/
+  - Local:   http://localhost:8080/ 
+  - Network: http://192.168.1.14:8080/
 ```
 
 <br>
@@ -73,12 +73,12 @@ As seguintes ferramentas/tecnologias foram usadas na construção e teste do pro
 | <a href="https://vuejs.org/" target="_blank"><img align="center" alt="vue" height="30" width="40" src="https://github.com/devicons/devicon/blob/master/icons/vuejs/vuejs-original.svg"> | VueJS  |  `3.0.0`       |
 | <a href="https://www.javascript.com/" target="_blank"><img align="center" alt="js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg"></a>                                         | JavaScript |  `4.6.3`  |
 | <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank"><img align="center" alt="html" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"></a>                        | HTML       |  `5.0.0`  |
-| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"><img align="center" alt="css" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"></a>                            | CSS        |  `3.0.0`  |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"><img align="center" alt="css" height="35" width="35" src="https://user-images.githubusercontent.com/82064724/191308763-14e11d15-b9f2-4a73-a78e-a9a614d16eca.png"></a>                            | SCSS        |  `3.0.0`  |
 | <a href="https://getbootstrap.com/" target="_blank"><img align="center" alt="scss" height="35" width="40" src="https://github.com/devicons/devicon/blob/master/icons/bootstrap/bootstrap-original.svg"></a>                                                   | Bootstrap  |  `5.2.0`  |
 | <a href="https://www.postgresql.org/download/" target="_blank"><img align="center" alt="node" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/nodejs/nodejs-original.svg"></a> | NodeJS     | `16.14.2` |
 
 <br>
-                 
+       
 ## ✍🏼 autor
 
 <table>
