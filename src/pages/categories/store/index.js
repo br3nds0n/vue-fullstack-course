@@ -1,4 +1,5 @@
 import axios from 'axios'
+import headers from '../../../auth'
 
 export default {
 
@@ -14,7 +15,7 @@ export default {
 
   actions: {
     getCategories ({ commit }) {
-      axios.get('http://localhost:5000/api/categories').then(res => {
+      axios.get('http://localhost:5000/api/categories', { headers }).then(res => {
         commit('getCategoriesM', res.data)
       })
     }
