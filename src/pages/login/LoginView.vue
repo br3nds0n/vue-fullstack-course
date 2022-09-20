@@ -28,8 +28,15 @@ export default {
         username: this.username,
         password: this.password
       }
+
       Axios.post('http://localhost:5000/api/login', dados).then(res => {
-        console.log(res.data)
+        if (res.data.token != null) {
+          localStorage.setItem('token', res.data.token)
+          alert('logado!')
+          this.$router.push('/')
+        } else {
+          alert('usuário invalido!')
+        }
       })
     }
   }
