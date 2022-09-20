@@ -70,7 +70,7 @@ As seguintes ferramentas/tecnologias foram usadas na construção e teste do pro
 
 | logo                                                                                                                                                                                                                                                         | Framework  |  Version  |
 | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------- | :-------: |
-| <a href="https://vuejs.org/" target="_blank"><img align="center" alt="vue" height="30" width="40" src="https://github.com/devicons/devicon/blob/master/icons/vuejs/vuejs-original.svg"> | VueJS  |  `3.0.0`       |
+| <a href="https://vuejs.org/" target="_blank"><img align="center" alt="vue" height="30" width="40" src="https://github.com/devicons/devicon/blob/master/icons/vuejs/vuejs-original.svg"></a> | VueJS  |  `3.0.0`       |
 | <a href="https://www.javascript.com/" target="_blank"><img align="center" alt="js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg"></a>                                         | JavaScript |  `4.6.3`  |
 | <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank"><img align="center" alt="html" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"></a>                        | HTML       |  `5.0.0`  |
 | <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"><img align="center" alt="css" height="35" width="35" src="https://user-images.githubusercontent.com/82064724/191308763-14e11d15-b9f2-4a73-a78e-a9a614d16eca.png"></a>                            | SCSS        |  `3.0.0`  |
@@ -93,7 +93,8 @@ As seguintes ferramentas/tecnologias foram usadas na construção e teste do pro
         <div>
             <a href="https://www.linkedin.com/in/brendson/" target="_blank" rel="noreferrer">
               <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Linkedin"/>
-            </a></br>
+            </a>
+            <br>
           </div>
         </sub>
       </a>
